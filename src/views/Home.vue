@@ -1,6 +1,6 @@
 <template>
   <div style="background: #eceff1">
-    <v-app-bar :elevation="0" color="white" min-height="100px">
+    <v-app-bar :elevation="0" color="white" min-height="100px" app>
       <v-img
         class="ml-2"
         src="../../public/R.png"
@@ -59,12 +59,14 @@
     </v-app-bar>
     <first-page />
     <second-page />
+    <third-page />
   </div>
 </template>
 
 <script>
 import FirstPage from "../components/FirstPage.vue";
 import SecondPage from "../components/SecondPage.vue";
+import ThirdPage from '../components/ThirdPage.vue';
 
 export default {
   name: "Home",
@@ -72,6 +74,7 @@ export default {
   components: {
     FirstPage,
     SecondPage,
+    ThirdPage,
   },
 };
 </script>

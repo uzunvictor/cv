@@ -1,11 +1,11 @@
 <template>
-  <v-container class="ma-2" fluid style="height: 90vh">
+  <v-container class="mt-16 pt-16" fluid style="height: 90vh">
     <v-row style="height: 100%">
       <v-col cols="6" class="d-flex flex-column justify-center">
         <div class="ml-16">
           <p
-            class=" text-left pl-10"
-            style="font-weight: 700; font-size: 3.75rem; line-height: 120%;"
+            class="text-left pl-10"
+            style="font-weight: 700; font-size: 3.75rem; line-height: 120%"
           >
             Build a professional resume for free
           </p>
@@ -30,6 +30,6 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "FirstPage",
 };
 </script>

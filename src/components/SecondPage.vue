@@ -1,5 +1,5 @@
  <template>
-  <v-container fluid style="height: 100vh" class="mx-16">
+  <v-container fluid style="height: 120vh" class="mx-16">
     <v-row class="ma-16 mb-3 d-flex justify-center">
       <p
         class="text-h3 font-weight-bold text-center my-5 mx-16"
