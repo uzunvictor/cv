@@ -28,56 +28,23 @@
         </v-col>
       </template>
     </v-row>
-    <v-row justify="start" class="full-width d-flex flex-column">
-      <v-col
-        cols="12"
-        style="max-height: 50px; margin-top: 15px; margin-bottom: 15px"
-        ><p class="white--text text-h6 font-weight-medium">
-          Highlight the academic background that makes you shine
-        </p>
-      </v-col>
-      <v-col class="d-flex flex-row justify-space-between">
-        <v-template v-for="img in images" :key="img">
-          <v-hover v-slot="{ hover }">
-            <v-card :elevation="hover ? 12 : 4" :class="{ 'on-hover': hover }"
-              ><v-img :src="img" height="450px" width="350px"></v-img>
-              <v-btn
-                v-if="hover"
-                color="blue"
-                dark
-                style="
-                  margin: auto;
-                  position: absolute;
-                  top: 40%;
-                  left: 0;
-                  right: 0;
-                  height: 60px;
-                "
-                max-width="220px"
-                ><p class="ma-2 pa-2 text-capitalize text-h6">
-                  Use this template
-                </p></v-btn
-              >
-            </v-card>
-          </v-hover>
-        </v-template>
-      </v-col>
-    </v-row>
+    <component :is="isActive" />
   </v-container>
 </template>
 
 <script>
+import Education from "./Education.vue";
+import Skill from "./Skill.vue";
+import Experience from "./Experience.vue";
+import Personality from "./Personality.vue";
+
 export default {
+  components: { Education, Skill, Experience, Personality },
   name: "ThirdPage",
 
   data() {
     return {
       items: ["Education", "Skill", "Experience", "Personality"],
-      images: [
-        require("@/assets/1.webp"),
-        require("@/assets/2.webp"),
-        require("@/assets/3.webp"),
-      ],
       isActive: "Education",
       templateTitle: "title",
     };
@@ -87,7 +54,7 @@ export default {
 
 <style scoped>
 .third-background {
-  background-image: url("../../public/back.png");
+  background-image: url("../../../public/back.png");
   min-height: 100vh;
   background-size: 100%;
 }

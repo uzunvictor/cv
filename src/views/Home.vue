@@ -1,17 +1,24 @@
 <template>
   <div style="background: #eceff1">
     <v-app-bar :elevation="0" color="white" min-height="100px" app>
-      <v-img
+      <!-- <v-img
         class="ml-2"
         src="../../public/R.png"
         max-width="100px"
         contain
+      ></v-img> -->
+      <v-img
+        class="ml-2"
+        src="../../public/resume.png"
+        max-width="250px"
+        contain
       ></v-img>
-      <v-toolbar-title
+      <!-- <v-toolbar-title
         class="ma-0 pa-0 blue--text text-h4 mb-1 font-weight-bold"
       >
         myResume</v-toolbar-title
-      ><v-spacer></v-spacer>
+      > -->
+      <v-spacer></v-spacer>
 
       <div>
         <v-btn text elevation="0"
@@ -66,7 +73,7 @@
 <script>
 import FirstPage from "../components/FirstPage.vue";
 import SecondPage from "../components/SecondPage.vue";
-import ThirdPage from '../components/ThirdPage.vue';
+import ThirdPage from "../components/third_page/ThirdPage.vue";
 
 export default {
   name: "Home",
