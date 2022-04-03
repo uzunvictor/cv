@@ -1,22 +1,17 @@
 <template>
-  <div style="background: #eceff1">
-    <v-app-bar :elevation="0" color="white" min-height="100px" app>
+  <div>
+    <v-app-bar color="white" height="80px" app>
       <!-- <v-img
         class="ml-2"
         src="../../public/R.png"
         max-width="100px"
         contain
       ></v-img> -->
-      <v-img
-        class="ml-2"
-        src="../../public/resume.png"
-        max-width="250px"
-        contain
-      ></v-img>
+      <img style="max-height: 50px" src="../../public/resume.png" />
       <!-- <v-toolbar-title
-        class="ma-0 pa-0 blue--text text-h4 mb-1 font-weight-bold"
+        class="ma-0 pa-0 blue--text text-h6 mb-1 font-weight-bold"
       >
-        myResume</v-toolbar-title
+        resume.com</v-toolbar-title
       > -->
       <v-spacer></v-spacer>
 
@@ -67,6 +62,8 @@
     <first-page />
     <second-page />
     <third-page />
+    <fourth-page />
+    <fifth-page />
   </div>
 </template>
 
@@ -74,6 +71,8 @@
 import FirstPage from "../components/FirstPage.vue";
 import SecondPage from "../components/SecondPage.vue";
 import ThirdPage from "../components/third_page/ThirdPage.vue";
+import FourthPage from "../components/FourthPage.vue";
+import FifthPage from "../components/FifthPage.vue";
 
 export default {
   name: "Home",
@@ -81,15 +80,17 @@ export default {
   components: {
     FirstPage,
     SecondPage,
+    FourthPage,
     ThirdPage,
+    FifthPage,
   },
 };
 </script>
 
 <style scoped>
->>> .v-toolbar__content {
-  min-height: 100px;
-}
+/* >>> .v-toolbar__content {
+  max-height: 70px;
+} */
 
 .background {
   background-color: #fff;

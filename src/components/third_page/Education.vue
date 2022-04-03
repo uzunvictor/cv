@@ -10,7 +10,7 @@
     <v-col class="d-flex flex-row justify-space-between">
       <v-template v-for="img in images" :key="img">
         <v-hover v-slot="{ hover }">
-          <v-card :elevation="hover ? 12 : 4" :class="{ 'on-hover': hover }"
+          <v-card :elevation="hover ? 12 : 4"
             ><v-img :src="img" height="450px" width="350px"></v-img>
             <v-btn
               v-if="hover"

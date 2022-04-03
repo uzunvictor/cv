@@ -38,14 +38,14 @@
 
 <script>
 export default {
-  name: "Skill",
+  name: "Experience",
 
   data() {
     return {
       images: [
-        require("@/assets/skill/1.webp"),
-        require("@/assets/skill/2.webp"),
-        require("@/assets/skill/3.webp"),
+        require("@/assets/experience/1.webp"),
+        require("@/assets/experience/2.webp"),
+        require("@/assets/experience/3.webp"),
       ],
     };
   },

@@ -1,7 +1,7 @@
 <template>
   <!-- :style="`background-image: linear-gradient(180deg, white, purple);`" -->
   <v-app>
-    <v-main>
+    <v-main class="pt-0">
       <router-view />
     </v-main>
   </v-app>

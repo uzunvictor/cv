@@ -56,7 +56,7 @@ export default {
 .third-background {
   background-image: url("../../../public/back.png");
   min-height: 100vh;
-  background-size: 100%;
+  background-size: 140%;
 }
 
 .active {
